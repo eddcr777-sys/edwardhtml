@@ -4,67 +4,253 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>24h Le Mans | Resistencia Pura</title>
+    <title>Carbon | Archivo Automotriz</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;900&family=Inter:wght@400;600&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;900&family=Inter:wght@400;700&swap"
         rel="stylesheet">
 </head>
 
 <body>
-    <header class="encabezado-premium">
+
+    <header>
         <div class="contenedor">
-            <div class="faja-superior">
-                <div class="logo-area">
-                    <span class="distintivo">RESISTANCE</span>
-                    <h1 class="marca">LE MANS<span>24</span></h1>
-                </div>
+            <div class="encabezado-flexible">
+                <div class="logo">CARBON<span>777</span></div>
+                <nav class="enlaces-menu">
+                    <a href="#galeria">Colección</a>
+                    <a href="#mas-info">Descripciones</a>
+                    <a href="#footer">Final</a>
+                </nav>
             </div>
         </div>
     </header>
 
     <main>
-        <section class="seccion-hero-v2">
-            <div class="contenedor">
-                <div class="contenido-vidrio">
-                    <span class="etiqueta-viva">24 HORAS DE LE MANS</span>
-                    <h2 class="titulo-impacto">Donde Cada Segundo <br><span class="texto-rojo">Cuenta.</span></h2>
-                    <p class="resumen">Una batalla épica de 24 horas donde los límites de la ingeniería y la voluntad
-                        humana se ponen a prueba en el legendario Circuit de la Sarthe.</p>
-                </div>
-            </div>
-        </section>
+        <div class="contenedor">
+            <section class="portada-principal">
+                <span class="etiqueta-superior">COLECCIÓN EXCLUSIVA 2026</span>
+                <h1>LOS MEJORES <br>AUTOS DEL MUNDO</h1>
+            </section>
 
-        <section class="tarjetas-rapidas">
-            <div class="contenedor">
-                <div class="malla-servicios">
-                    <div class="tarjeta-v3">
-                        <div class="numero-guia">01</div>
-                        <h3>Velocidad</h3>
-                        <p>Máquinas que superan los 340 km/h en la mítica recta de Mulsanne.</p>
+            <section class="rejilla-estadisticas" id="stats">
+                <div class="bloque-estadistica">
+                    <b>12</b>
+                    <span>Modelos Exclusivos</span>
+                </div>
+                <div class="bloque-estadistica">
+                    <b>+900</b>
+                    <span>HP de Potencia</span>
+                </div>
+                <div class="bloque-estadistica">
+                    <b>04</b>
+                    <span>Países de Origen</span>
+                </div>
+                <div class="bloque-estadistica">
+                    <b>100%</b>
+                    <span>Adrenalina Pura</span>
+                </div>
+            </section>
+
+            <div class="lista-vehiculos" id="galeria">
+                <!-- Porsche -->
+                <div class="tarjeta-vehiculo">
+                    <div class="ficha-tecnica-hover">
+                        <span class="dato-tecnico">MOTOR: <span>V8 TURBO</span></span>
+                        <span class="dato-tecnico">POTENCIA: <span>680 CV</span></span>
+                        <span class="dato-tecnico">TOP: <span>345 KM/H</span></span>
                     </div>
-                    <div class="tarjeta-v3">
-                        <div class="numero-guia">02</div>
-                        <h3>Estrategia</h3>
-                        <p>Gestión de neumáticos, combustible y paradas en boxes críticas.</p>
-                    </div>
-                    <div class="tarjeta-v3">
-                        <div class="numero-guia">03</div>
-                        <h3>Leyenda</h3>
-                        <p>Más de 100 años forjando la historia del automovilismo mundial.</p>
+                    <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=1200" alt="Porsche">
+                    <div class="info-tarjeta">
+                        <span class="distintivo-tarjeta">STUTTGART</span>
+                        <h3>Porsche <br>963</h3>
                     </div>
                 </div>
+
+                <!-- Ferrari -->
+                <div class="tarjeta-vehiculo">
+                    <div class="ficha-tecnica-hover">
+                        <span class="dato-tecnico">MOTOR: <span>V6 TURBO</span></span>
+                        <span class="dato-tecnico">POTENCIA: <span>680 CV</span></span>
+                        <span class="dato-tecnico">AERO: <span>ACTIVA</span></span>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1592198084033-aade902d1aae?q=80&w=1200" alt="Ferrari">
+                    <div class="info-tarjeta">
+                        <span class="distintivo-tarjeta">MARANELLO</span>
+                        <h3>Ferrari <br>499P</h3>
+                    </div>
+                </div>
+
+                <!-- Corvette -->
+                <a href="#detalles-corvette" class="tarjeta-vehiculo">
+                    <div class="ficha-tecnica-hover">
+                        <span class="dato-tecnico">MOTOR: <span>V8 5.5L</span></span>
+                        <span class="dato-tecnico">SONIDO: <span>BRUTAL</span></span>
+                        <span class="dato-tecnico">PAÍS: <span>USA</span></span>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?q=80&w=1200" alt="Corvette">
+                    <div class="info-tarjeta">
+                        <span class="distintivo-tarjeta">DETROIT</span>
+                        <h3>Corvette <br>C8.R</h3>
+                    </div>
+                </a>
+
+                <!-- Aston -->
+                <a href="#detalles-aston" class="tarjeta-vehiculo">
+                    <div class="ficha-tecnica-hover">
+                        <span class="dato-tecnico">MOTOR: <span>V12</span></span>
+                        <span class="dato-tecnico">HP: <span>1100 CV</span></span>
+                        <span class="dato-tecnico">ESTILO: <span>PROTOTIPO</span></span>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1621135802920-133df287f89c?q=80&w=1200" alt="Aston">
+                    <div class="info-tarjeta">
+                        <span class="distintivo-tarjeta">GAYDON</span>
+                        <h3>Valkyrie <br>GT</h3>
+                    </div>
+                </a>
             </div>
-        </section>
+
+            <!-- Nueva sección de descripciones estilo principiante -->
+            <section class="seccion-descripciones" id="mas-info">
+                <h2 class="titulo-simple">Detalles de nuestros carros</h2>
+                <div class="rejilla-descripciones">
+
+                    <div class="caja-descripcion">
+                        <h3>Sobre el Porsche 963</h3>
+                        <p>Este carro es muy rápido y se ve genial. Es de color blanco con rojo y corre en carreras muy
+                            largas. Tiene un motor que usa gasolina y también electricidad para ir más veloz. Me gusta
+                            mucho cómo se ven sus luces de noche porque iluminan todo el camino cuando van a toda
+                            velocidad.</p>
+                        <p>Es un carro Alemán muy famoso porque siempre gana o queda en los primeros lugares. Lo que más
+                            impresiona es que puede estar corriendo 24 horas sin descanso y no se daña, es muy
+                            resistente.</p>
+                        <ul style="margin-top:15px; color:#aaa; list-style:none;">
+                            <li>• Motor: V8 con turbo</li>
+                            <li>• Color: Blanco, rojo y negro</li>
+                            <li>• Lo mejor: Luces LED increíbles</li>
+                            <li>• País: Alemania</li>
+                        </ul>
+                    </div>
+
+                    <div class="caja-descripcion">
+                        <h3>Sobre el Ferrari 499P</h3>
+                        <p>Ferrari hizo este carro para ganar otra vez y lo lograron. Es de color rojo brillante y tiene
+                            una forma muy
+                            aerodinámica. El alerón de atrás es muy grande para que no se salga de la pista cuando toma
+                            las curvas muy rápido. Es uno de
+                            los carros más famosos del mundo ahora mismo.</p>
+                        <p>Por dentro tiene muchísima tecnología que parece de una nave espacial. Los pilotos tienen que
+                            entrenar mucho para poder manejarlo porque tiene muchos botones en el volante para controlar
+                            todo.</p>
+                        <ul style="margin-top:15px; color:#aaa; list-style:none;">
+                            <li>• Marca: Ferrari (Italia)</li>
+                            <li>• Estilo: Hypercar del futuro</li>
+                            <li>• Lo mejor: Color rojo Ferrari</li>
+                            <li>• Aero: Alerón gigante atrás</li>
+                        </ul>
+                    </div>
+
+                    <div class="caja-descripcion">
+                        <h3>Sobre el Corvette C8.R</h3>
+                        <p>Este es un carro americano muy potente. Su motor suena muy fuerte y ronco, como un trueno que
+                            asusta. Se
+                            ve muy agresivo y ancho. Es el favorito de mucha gente porque se nota que tiene mucha fuerza
+                            cuando arranca apenas pisa el acelerador.</p>
+                        <p>A diferencia de los otros, este motor no usa electricidad, es puro poder de gasolina y por
+                            eso suena tan fuerte. Es muy confiable y siempre da pelea contra los carros europeos más
+                            caros.</p>
+                        <ul style="margin-top:15px; color:#aaa; list-style:none;">
+                            <li>• Motor: V8 de 5.5 litros</li>
+                            <li>• Sonido: El mejor de todos</li>
+                            <li>• Origen: Estados Unidos</li>
+                            <li>• Fuerza: Muchísimo torque</li>
+                        </ul>
+                    </div>
+
+                    <div class="caja-descripcion">
+                        <h3>Sobre el Aston Valkyrie</h3>
+                        <p>Parece un carro del futuro o una nave espacial de película. Tiene muchos huecos para que pase
+                            el aire y
+                            sea súper rápido y se pegue al suelo. Es tan bajito que casi toca el piso y es muy difícil
+                            de manejar pero se ve increíble parqueado o
+                            corriendo.</p>
+                        <p>Fue diseñado por un ingeniero muy inteligente que hace carros de Fórmula 1. Es el carro más
+                            extremo de toda la colección porque no se parece a nada que veas en la calle normalmente.
+                        </p>
+                        <ul style="margin-top:15px; color:#aaa; list-style:none;">
+                            <li>• Diseño: Aerodinámica extrema</li>
+                            <li>• Motor: V12 muy grande</li>
+                            <li>• Lo mejor: Parece un avión</li>
+                            <li>• Rareza: Muy pocos en el mundo</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="bloque-servicios">
+                <div class="item-servicio">
+                    <h3>Curaduría Experta</h3>
+                    <p>Cada vehículo es seleccionado tras rigurosas pruebas de rendimiento y estética en nuestro centro
+                        técnico.</p>
+                </div>
+                <div class="item-servicio">
+                    <h3>Red Global</h3>
+                    <p>Contamos con una red de logística internacional para llevar la exclusividad a cualquier rincón
+                        del mundo.</p>
+                </div>
+                <div class="item-servicio">
+                    <h3>Mantenimiento</h3>
+                    <p>Soporte especializado 24/7 con ingenieros certificados en arquitectura de motores de competición.
+                    </p>
+                </div>
+            </section>
+        </div>
     </main>
 
-    <footer class="pie-moderno">
+    <!-- Ventanas de Detalles (Modals) -->
+    <div id="detalles-corvette" class="panel-detalles">
+        <a href="#" class="fondo-modal" style="position: absolute; inset:0;"></a>
+        <div class="cuerpo-panel">
+            <a href="#" class="cerrar-panel">&times;</a>
+            <img src="https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?q=80&w=1200" class="imagen-panel">
+            <span class="etiqueta-superior">DETROIT STEEL</span>
+            <h2>CORVETTE C8.R</h2>
+            <p style="color: #777; margin-bottom: 40px;">Fuerza americana pura y un rugido inconfundible.</p>
+            <div style="border-top:1px solid #1a1a1a; padding-top:20px;">
+                <p><b>MOTOR:</b> V8 5.5L</p>
+                <p><b>SONIDO:</b> Trueno</p>
+                <p><b>TRACCIÓN:</b> Trasera</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="detalles-aston" class="panel-detalles">
+        <a href="#" class="fondo-modal" style="position: absolute; inset:0;"></a>
+        <div class="cuerpo-panel">
+            <a href="#" class="cerrar-panel">&times;</a>
+            <img src="https://images.unsplash.com/photo-1621135802920-133df287f89c?q=80&w=1200" class="imagen-panel">
+            <span class="etiqueta-superior">AERO DESIGN</span>
+            <h2>VALKYRIE GT</h2>
+            <p style="color: #777; margin-bottom: 40px;">El futuro de la aerodinámica sin límites.</p>
+            <div style="border-top:1px solid #1a1a1a; padding-top:20px;">
+                <p><b>MOTOR:</b> V12 Hybrid</p>
+                <p><b>HP:</b> 1100 CV</p>
+                <p><b>ESTADO:</b> Prototipo</p>
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer">
         <div class="contenedor">
-            <h3>Hecho por Edward &copy; 2026</h3>
-            <p>Pasión por la Resistencia • 24 Horas de Le Mans</p>
+            <div class="parte-superior-footer">
+                <div class="logo">CARBON<span>777</span></div>
+                <div class="texto-derechos">ARCHIVO AUTOMOTRIZ EXCLUSIVO &copy; 2026</div>
+            </div>
         </div>
     </footer>
+
 </body>
 
 </html>
